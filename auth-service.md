@@ -192,4 +192,4 @@ Runtime configuration:
 
 ## GitOps workflow
 
-If you want to learn more about the GitOps workflow documentation of this microservice, go to this link: [gitops-doc-link-for-auth-service](https://github.com/KUBE-POD404/opslora-gitops-docs/blob/main/README.md)
+If you want to learn more about the GitOps workflow documentation of this microservice, go to this link: [opslora-gitops-docs](https://github.com/KUBE-POD404/opslora-gitops-docs/blob/main/README.md)
