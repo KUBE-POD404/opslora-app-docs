@@ -181,4 +181,4 @@ The frontend API client uses `/api/v1` for every backend request.
 
 ## GitOps workflow
 
-If you want to learn more about the GitOps workflow documentation of this microservice, go to this link: `<gitops-doc-link-for-frontend-service>`
+If you want to learn more about the GitOps workflow documentation of this microservice, go to this link: [<opslora-gitops-docs>](https://github.com/KUBE-POD404/opslora-gitops-docs/blob/main/README.md)
