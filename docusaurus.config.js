@@ -13,8 +13,20 @@ const config = {
       "classic",
       {
         docs: {
+          path: ".",
           routeBasePath: "/",
           sidebarPath: require.resolve("./sidebars.js"),
+          exclude: [
+            "node_modules/**",
+            "build/**",
+            ".docusaurus/**",
+            "src/**",
+            "images/**",
+            "Dockerfile",
+            "package*.json",
+            "sidebars.js",
+            "docusaurus.config.js",
+          ],
         },
         blog: false,
         theme: {
