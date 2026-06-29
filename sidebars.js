@@ -1,14 +1,16 @@
 const sidebars = {
   docs: [
     "README",
-    "frontend-service",
-    "auth-service",
-    "customer-service",
-    "order-service",
-    "inventory-service",
-    "invoice-service",
-    "payment-service",
-    "notification-service",
+    "getting-started",
+    "daily-workflow",
+    "customers",
+    "inventory",
+    "orders",
+    "invoices",
+    "payments",
+    "lora-ai",
+    "settings",
+    "troubleshooting",
   ],
 }
 

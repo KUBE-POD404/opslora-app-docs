@@ -1,71 +1,57 @@
-# Opslora Sales Platform
+---
+title: Opslora application guide
+slug: /
+---
 
-Opslora is a microservices-based sales management application designed to support the complete business workflow of a modern sales-driven organization.
+# Opslora application guide
 
-- It brings together organization onboarding, user authentication, customer management, order processing, invoicing, payments, and notifications into one connected platform.
-- It is built to help teams manage sales operations in a structured, scalable, and maintainable way.
-- It is intended for businesses and teams that need a streamlined way to manage their sales lifecycle across multiple operational areas.
-- It is especially useful for organizations that want a single system for handling customer records, tracking orders, managing invoices, recording payments, and supporting internal users through secure role-based access.
-- It is being developed not only for current workflows, but also as a foundation for future growth.
-- The long-term vision is to evolve it into a more complete business operations ecosystem with stronger reporting, deeper workflow automation, richer communication features, AI-assisted capabilities, and improved scalability for growing teams and organizations.
-- Future enhancements may include broader analytics, more advanced billing and payment capabilities, additional notification channels, stronger operational observability, AI-driven insights and assistance, and more integrations with external business systems.
-- The microservices-based architecture is designed to support that evolution by keeping each business domain separated into focused services.
+Opslora is a business operations workspace for teams that need one place to manage customers, products, orders, invoices, payments, and daily operating signals.
 
-## Application Vision
+This documentation is written for people using the application. It does not document internal services, infrastructure, APIs, containers, or deployment architecture.
 
-- Opslora aims to provide a reliable and extensible platform where organizations can manage their sales activities with clarity and consistency.
-- By separating responsibilities across services, the application is positioned to grow over time while remaining easier to maintain, extend, and deploy.
+## What Opslora helps you do
 
-## Application Diagram
+- Create an organization workspace and sign in securely.
+- Keep customer records clean and ready for orders and invoices.
+- Maintain the product catalogue and stock information used by sales workflows.
+- Create and confirm customer orders.
+- Convert confirmed orders into invoices.
+- Record payments, review payment history, and process refunds where available.
+- Use settings to keep business profile, tax, invoice, portal, feature, and Lora AI consent options aligned.
+- Use Lora AI, when enabled, as an operations assistant for summaries and follow-up prompts.
 
-![Application Diagram](./images/application_diagram.svg)
+## Current application areas
 
-The application is built around independent microservices, each responsible for a specific domain within the sales lifecycle. Together, these services power the frontend experience, core business processes, financial operations, and background communication workflows.
+| Area | What it is for |
+| --- | --- |
+| Dashboard | High-level revenue, order, customer, and invoice signals. |
+| Customers | Customer profiles, billing details, tax details, and customer updates. |
+| Inventory | Product catalogue, sellable items, stock balances, and stock adjustments. |
+| Orders | Draft, confirm, cancel, and prepare orders for invoicing. |
+| Invoices | Review invoices, track open/paid states, download invoice documents, and start payment flows. |
+| Payments | See payment activity, open payment details, and process refunds. |
+| Lora AI | Consent-gated assistant for operations briefing and natural-language questions. |
+| Settings | Business profile, tax profile, invoice defaults, invoice templates, portal settings, feature flags, profile, and Lora AI consent. |
 
-- Each microservice is focused on a specific business capability.
-- Together, the services support the frontend experience, core business processes, financial operations, and background communication workflows.
+## Recommended reading path
 
-## Microservices Overview
+1. [Getting started](./getting-started.md)
+2. [Daily operations workflow](./daily-workflow.md)
+3. [Customers](./customers.md)
+4. [Inventory](./inventory.md)
+5. [Orders](./orders.md)
+6. [Invoices](./invoices.md)
+7. [Payments](./payments.md)
+8. [Lora AI](./lora-ai.md)
+9. [Settings](./settings.md)
+10. [Troubleshooting and FAQ](./troubleshooting.md)
 
-### Auth Service
+## Product principle
 
-- The auth service manages organization onboarding, user authentication, JWT generation, and role-based access control. It acts as the identity and access management layer of the platform.
+Opslora is organized around the order-to-cash workflow:
 
-> Note: For more information, refer to [auth-service.md](./auth-service.md).
+```text
+Customer -> Product/stock -> Order -> Invoice -> Payment -> Follow-up
+```
 
-### Customer Service
-
-- The customer service manages customer information for each organization and serves as the central source of customer records used across the platform.
-
-> Note: For more information, refer to [customer-service.md](./customer-service.md).
-
-### Order Service
-
-- The order service handles the creation and lifecycle management of sales orders, including order items and status transitions throughout the sales process.
-
-> Note: For more information, refer to [order-service.md](./order-service.md).
-
-### Invoice Service
-
-- The invoice service creates and manages invoices for confirmed orders, supporting invoice tracking and the financial flow of the application.
-
-> Note: For more information, refer to [invoice-service.md](./invoice-service.md).
-
-### Payment Service
-
-- The payment service records payments against invoices and supports the tracking of outstanding and completed payment activity.
-
-> Note: For more information, refer to [payment-service.md](./payment-service.md).
-
-### Notification Service
-
-- The notification service handles asynchronous communication such as transactional emails for signup and order-related events.
-
-> Note: For more information, refer to [notification-service.md](./notification-service.md).
-
-### Frontend Service
-
-- The frontend service is the user-facing application that provides the dashboards and workflows used to interact with the platform and its business features.
-
-> Note: For more information, refer to [frontend-service.md](./frontend-service.md).
-# opslora-app-docs
+The application keeps each step visible so users can see what needs action next, instead of jumping between disconnected tools.
