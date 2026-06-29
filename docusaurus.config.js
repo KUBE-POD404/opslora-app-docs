@@ -1,6 +1,6 @@
 const config = {
   title: "Opslora Docs",
-  tagline: "Architecture, services, operations, and deployment notes.",
+  tagline: "Application guide for customers, orders, invoices, payments, and daily operations.",
   favicon: "img/favicon.ico",
   url: "https://docs.opslora.com",
   baseUrl: "/",
