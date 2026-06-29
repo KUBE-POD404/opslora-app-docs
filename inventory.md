@@ -6,7 +6,7 @@ title: Inventory
 
 Inventory is the application workspace for sellable products and stock. It helps users choose the right product when creating orders and understand whether stock needs attention.
 
-This page documents the application experience only. It does not describe any internal inventory service or backend implementation.
+This page documents the application experience only. It does not describe backend implementation details.
 
 ## What you can do
 
